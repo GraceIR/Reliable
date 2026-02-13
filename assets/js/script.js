@@ -599,3 +599,33 @@ if ($('#map').length > 0) {
       }
     });
   });
+
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    // Find the specific widget containing "All Services"
+    const allServicesWidget = Array.from(document.querySelectorAll('.widget')).find(widget => {
+      const heading = widget.querySelector('h5');
+      return heading && heading.textContent.includes('All Services');
+    });
+
+    if (allServicesWidget) {
+      const serviceLinks = allServicesWidget.querySelectorAll('.service--single-button');
+
+      serviceLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          // Remove 'active' class from all service links in this widget
+          serviceLinks.forEach(l => l.classList.remove('active'));
+          // Add 'active' class to the clicked link
+          this.classList.add('active');
+          // The link still navigates to its href (no e.preventDefault())
+        });
+      });
+    }
+  });
+// Highlight the link that matches the current URL
+const currentUrl = window.location.href;
+serviceLinks.forEach(link => {
+  if (link.href === currentUrl) {
+    link.classList.add('active');
+  }
+});
