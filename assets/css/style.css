@@ -6,14 +6,14 @@
  */
 :root,
 [data-bs-theme=light] {
-  --bs-blue: #0d6efd;
+  --bs-blue: #dc3545;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
   --bs-yellow: #ffc107;
-  --bs-green: #198754;
+  --bs-green: #0bda79;
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
   --bs-black: #000;
@@ -33,7 +33,7 @@
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
-  --bs-warning: #ffc107;
+  --bs-warning: #198754;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
@@ -45,12 +45,12 @@
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
-  --bs-primary-text-emphasis: rgb(5.2, 44, 101.2);
+  --bs-primary-text-emphasis: rgb(88, 21.2, 27.6);
   --bs-secondary-text-emphasis: rgb(43.2, 46.8, 50);
   --bs-success-text-emphasis: rgb(10, 54, 33.6);
   --bs-info-text-emphasis: rgb(5.2, 80.8, 96);
   --bs-warning-text-emphasis: rgb(102, 77.2, 2.8);
-  --bs-danger-text-emphasis: rgb(88, 21.2, 27.6);
+  --bs-danger-text-emphasis: rgb(10, 80.8, 27.6);
   --bs-light-text-emphasis: #495057;
   --bs-dark-text-emphasis: #495057;
   --bs-primary-bg-subtle: rgb(206.6, 226, 254.6);
@@ -28892,3 +28892,32 @@ textarea {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+ 
+    /* Remove any box-like styling from the links */
+    .brand-item {
+      background: none !important;
+      border: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      outline: none !important;
+      box-shadow: none !important;
+      color: inherit !important; 
+      
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      min-height: 80px;        
+      padding: 10px 0 !important; 
+      margin: 0 !important;
+  
+    }
+
+    
+    /* Optional: keep the bold class */
+    .company-name.fw-bold {
+      font-weight: 1000;
+   
+      
+    }
+ 

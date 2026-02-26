@@ -629,3 +629,16 @@ serviceLinks.forEach(link => {
     link.classList.add('active');
   }
 });
+
+
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+  });
+
+  

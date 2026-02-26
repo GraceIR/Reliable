@@ -28,7 +28,9 @@
 		<link rel="stylesheet" href="assets/css/leaflet.css">
 		<link rel="stylesheet" href="assets/css/leaflet-routing-machine.css">
 		<link rel="stylesheet" href="assets/css/style.css">
-
+       
+		<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	</head>
 
 
@@ -59,7 +61,7 @@
 										<span class="phone-icon topbar-contact-icon icon-border">											
 											<svg width="12" height="12"><use xlink:href="#phone-icon"></use></svg> 
 										</span>
-										<p class="mb-0 fw-medium"><a href="tel:(+0123)234556789" class="text-decoration-none link-hover-animation-1">(+234)7060582482</a></p>
+										<p class="mb-0 fw-medium"><a href="tel:(+234)7060582482" class="text-decoration-none link-hover-animation-1">(+234)7060582482</a></p>
 									</li>											
 								</ul>
 								<!-- top-bar-contact-lists -->
@@ -460,7 +462,7 @@
 														</span>
 													</a>
 												</div>
-												<div>
+												<!--<div>
 													<a href="https://www.youtube.com/watch?v=lfDZJqSrIuk" aria-label="video-popus-icon" class="video-popup video-popup-style-2 custom-pulse-animation position-relative">
 														<span class="video-icon">						
 															<svg width="24" height="30"><use xlink:href="#video-icon"></use></svg> 
@@ -469,7 +471,7 @@
 												</div>
 												<div>
 													<p class="mb-0 lead">How it works ?</p>
-												</div>	
+												</div>-->
 											</div>
 										</div>
 										<!-- hero-inner -->
@@ -505,7 +507,7 @@
 														</span>
 													</a>
 												</div>
-												<div>
+												<!--<div>
 													<a href="https://www.youtube.com/watch?v=lfDZJqSrIuk" aria-label="video-popus-icon" class="video-popup video-popup-style-2 custom-pulse-animation position-relative">
 														<span class="video-icon">						
 															<svg width="24" height="30"><use xlink:href="#video-icon"></use></svg> 
@@ -514,7 +516,7 @@
 												</div>
 												<div>
 													<p class="mb-0 lead">How it works ?</p>
-												</div>	
+												</div>-->
 											</div>
 										</div>
 										<!-- hero-inner -->
@@ -824,13 +826,13 @@
 								</div>
 								<div class="about-service d-flex gap-1 flex-column align-items-center justify-content-center shadow border-8">
 									<h4 class="mb-0 d-flex text-secondary">
-										<span class="odometer" data-count-to=150></span><span class="odometer-pertial-text">+</span>
+										<span class="odometer" data-count-to=10></span><span class="odometer-pertial-text">+</span>
 									</h4>
 									<p class="mb-0 fw-medium ">Countries Service</p>
 								</div>
 								<div class="about-service d-flex gap-1 flex-column align-items-center justify-content-center shadow border-8">
 									<h4 class="mb-0 d-flex text-secondary">
-										<span class="odometer" data-count-to=10></span><span class="odometer-pertial-text">+</span>
+										<span class="odometer" data-count-to=150></span><span class="odometer-pertial-text">+</span>
 									</h4>
 									<p class="mb-0 fw-medium ">Deliveries</p>
 								</div>
@@ -1059,195 +1061,98 @@
 			<!--CTA Section ======================-->
 
 			 <!--Brand Section ======================-->
-			<section class="section-brand brand-1 pb-60 pb-lg-100 pb-xxl-120">	
-				<div class="bg-custom-white py-60 py-lg-100 py-xxl-120 mb-lg-100">			
-				<div class="container">
-					<div class="text-lg-center">
-						<h6 class="mb-10 text-primary fw-medium">Our Partners</h6>
-						<h3 class="mb-40">Our <span class="text-primary">Trusted</span> Collaborators</h3>
-						<div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-30">
-							<div class="col">
-								<a href="#" class="brand-item text-decoration-none">
-									<img src="" class="img-fluid" alt="Orient global star ltd">
-								</a>
-							</div>
-							<!-- col -->
-							<div class="col">
-								<a href="#" class="brand-item text-decoration-none">
-									<img src="" class="img-fluid" alt="I.c. sky ventures ltd">
-								</a>
-							</div>
-							<!-- col -->
-							<div class="col">
-								<a href="#" class="brand-item text-decoration-none">
-									<img src="" class="img-fluid" alt="Fintech ventures ltd">
-								</a>
-							</div>
-							<!-- col -->
-							<div class="col">
-								<a href="#" class="brand-item text-decoration-none">
-									<img src="" class="img-fluid" alt="Qualism global resources ltd">
-								</a>
-							</div>
-							<!-- col -->
-							<div class="col">
-								<a href="#" class="brand-item text-decoration-none">
-									<img src="" class="img-fluid" alt="Maxilon">
-								</a>
-							</div>
-							<!-- col -->
-							<div class="col">
-								<a href="#" class="brand-item text-decoration-none">
-									<img src="" class="img-fluid" alt="Labarani Furniture ltd">
-								</a>
-							</div>
-							<!-- col -->
+   <section class="section-brand brand-1 bg-custom-light pb-60 pb-lg-100 pb-xxl-120">
 
-							<div class="col">
-								<a href="#" class="brand-item text-decoration-none">
-									<img src="" class="img-fluid" alt="Furniture Plaza ltd">
-								</a>
-							</div>
+  <div class="container">
+    <div class="text-lg-center">
+      <h6 class="mb-10 text-primary mt-5 fw-medium">Our Partners</h6>
+      <h3 class="mb-40">Our <span class="text-primary mt-5">Trusted</span> Collaborators</h3>
 
-                            <!-- col -->
+      <!-- Bootstrap Carousel -->
+      <div id="partnerCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-30">
+              <div class="col">
+                <a href="#" class="brand-item text-decoration-none d-block">
+                  <span class="company-name fw-bold text-primary">Orient global star ltd</span>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" class="brand-item text-decoration-none d-block">
+                  <span class="company-name fw-bold text-primary">I.c. sky ventures ltd</span>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" class="brand-item text-decoration-none d-block">
+                  <span class="company-name fw-bold text-primary">Fintech ventures ltd</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-30">
+              <div class="col">
+                <a href="#" class="brand-item text-decoration-none d-block">
+                  <span class="company-name fw-bold text-primary">Qualism global resources ltd</span>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" class="brand-item text-decoration-none d-block">
+                  <span class="company-name fw-bold text-primary">Maxilon</span>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" class="brand-item text-decoration-none d-block">
+                  <span class="company-name fw-bold text-primary">Labarani Furniture ltd</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-30 justify-content-center">
+              <div class="col">
+                <a href="#" class="brand-item text-decoration-none d-block">
+                  <span class="company-name fw-bold text-primary">Furniture Plaza ltd</span>
+                </a>
+              </div>
 
-							<div class="col">
-								<a href="#" class="brand-item text-decoration-none">
-									<img src="" class="img-fluid" alt="D Martins">
-								</a>
-							</div>
-						</div>
-						<!-- row -->
-					</div>
-				</div>
-				</div>
-				<!-- container -->				
-			</section>
+			   <div class="col">
+                <a href="#" class="brand-item text-decoration-none d-block">
+                  <span class="company-name fw-bold text-primary">D Martins</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#partnerCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#partnerCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
 			<!--Brand Section ======================-->
 
 
-			<!--Blog Section ======================-->
-			<section class="section-blog pb-60 pb-lg-100 pb-xxl-120">
-				<div class="blog-wrapper bg-custom-light py-60 py-lg-100 py-xxl-120">
-					<div class="container">
-
-						<div class="row gy-4 justify-content-between align-items-end mb-30 mb-md-40">
-							<div class="col-md-9">
-								<div class="d-flex flex-column gap-10">
-									<h6 class="mb-0 text-primary fw-medium">Blog & Article</h6>
-									<h3 class="mb-0">Get The <span class="text-primary">Latest</span> Our News</h3>	
-								</div>							
-							</div>
-							<!-- col-9 -->
-							<div class="col-md-3 col-lg-2">
-								<div class="blogSwiper-buttons blogSwiper-buttons-style-2 d-flex gap-3 gap-lg-20 justify-content-md-end">
-									<div class="blogSwiper-button-prev">
-										<span class="blog-arrow-icon blog-arrow-style-2 arrow-reverse">											
-											<svg width="14" height="14"><use xlink:href="#arrow-icon-2"></use></svg> 
-										</span>
-									</div>
-									<div class="blogSwiper-button-next">
-										<span class="blog-arrow-icon blog-arrow-style-2">											
-											<svg width="14" height="14"><use xlink:href="#arrow-icon-2"></use></svg> 
-										</span>
-									</div>									
-								</div>
-								<!-- blogSwiper-buttons -->								
-							</div>
-							<!-- col-2 -->
-						</div>
-						<!-- row -->
-						<div class="swiper blogSwiper p-10 wow fadeInUp">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<div class="card card-style-3 card-custom wow fadeInUp" data-wow-delay="150ms" data-wow-duration="1.3s">
-										<div class="card-image-wrapper border-10">
-											<img src="assets/images/blog-8.jpg" class="card-img-top" alt="blog-8">
-										</div>
-										<!-- card-image-wrapper -->
-										<div class="card-body">
-											<div class="d-flex flex-column gap-10">	
-												<p class="card-info mb-0 font-family-style-1">by <a href="#" class="text-decoration-none blog-custom-link">Admin</a> | 10 May 2025 | <a href="#" class="text-decoration-none blog-custom-link">Logistics</a></p>										
-												<h5 class="card-title fw-medium mb-0 mb-xl-2"><a href="news-single.html" class="text-decoration-none link-hover-animation-2">Optimizing Supply Chain Efficiency</a></h5>
-												<div>
-													<a href="news-single.html" class="btn btn-link text-decoration-none link-hover-animation-1 gap-10">Read More
-														<span class="btn-link-icon">											
-															<svg width="11" height="12"><use xlink:href="#arrow-icon-2"></use></svg> 
-														</span>
-													</a>
-												</div>
-											</div>
-										</div>
-										<!-- card-body -->
-									</div>
-									<!-- card -->
-								</div>
-								<!-- swiper-slide -->
-								<div class="swiper-slide">
-									<div class="card card-style-3 card-custom wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1.3s">
-										<div class="card-image-wrapper border-10">
-											<img src="assets/images/blog-9.jpg" class="card-img-top" alt="blog-9">
-										</div>
-										<!-- card-image-wrapper -->
-										<div class="card-body">
-											<div class="d-flex flex-column gap-10">	
-												<p class="card-info mb-0 font-family-style-1">by <a href="#" class="text-decoration-none blog-custom-link">Admin</a> | 24 Feb 2025 | <a href="#" class="text-decoration-none blog-custom-link">Transport</a></p>										
-												<h5 class="card-title fw-medium mb-0 mb-xl-2"><a href="news-single.html" class="text-decoration-none link-hover-animation-2">Navigating International Customs Regulations</a></h5>
-												<div>
-													<a href="news-single.html" class="btn btn-link text-decoration-none link-hover-animation-1 gap-10">Read More
-														<span class="btn-link-icon">											
-															<svg width="11" height="12"><use xlink:href="#arrow-icon-2"></use></svg> 
-														</span>
-													</a>
-												</div>
-											</div>
-										</div>
-										<!-- card-body -->
-									</div>
-									<!-- card -->
-								</div>
-								<!-- swiper-slide -->
-								<div class="swiper-slide">
-									<div class="card card-style-3 card-custom wow fadeInUp" data-wow-delay="450ms" data-wow-duration="1.3s">
-										<div class="card-image-wrapper border-10">
-											<img src="assets/images/about-image-2.jpg" class="card-img-top" alt="about-image-2">
-										</div>
-										<!-- card-image-wrapper -->
-										<div class="card-body">
-											<div class="d-flex flex-column gap-10">	
-												<p class="card-info mb-0 font-family-style-1">by <a href="#" class="text-decoration-none blog-custom-link">Admin</a> | 17 Jan 2025 | <a href="#" class="text-decoration-none blog-custom-link">Warehouse</a></p>										
-												<h5 class="card-title fw-medium mb-0 mb-xl-2"><a href="news-single.html" class="text-decoration-none link-hover-animation-2">Sustainable Logistics Building a Greener Supply Chain</a></h5>
-												<div>
-													<a href="news-single.html" class="btn btn-link text-decoration-none link-hover-animation-1 gap-10">Read More
-														<span class="btn-link-icon">											
-															<svg width="11" height="12"><use xlink:href="#arrow-icon-2"></use></svg> 
-														</span>
-													</a>
-												</div>
-											</div>
-										</div>
-										<!-- card-body -->
-									</div>
-									<!-- card -->
-								</div>
-								<!-- swiper-slide -->
-							</div>
-							<!-- swiper-wrapper -->	
-						</div>
-						<!-- swiper blogSwiper -->
-					</div>
-					<!-- container -->	
-				</div>
-				<!-- blog-wrapper -->
-			</section>
-			<!--Blog Section ======================-->
+			
 
 
 			<!--Testimonial Section ======================-->
 			<section class="section-testimonial testimonial-2 pb-60 pb-lg-100 pb-xxl-120">
 				<div class="container">
 					<div class="mb-40 text-lg-center">
-						<h6 class="mb-10 text-primary fw-medium">Client Testimonial</h6>
+						<h6 class="mb-10 text-primary fw-medium mt-5">Client Testimonial</h6>
 						<h3 class="mb-0">What Clients Say <span class="text-primary">About Our Services</span></h3>
 					</div>
 					<div class="swiper testimonialSwiper-2">
@@ -1517,6 +1422,121 @@
 			</section>
 			<!--Call Request Section ======================-->
 
+			<!--Blog Section ======================-->
+			<section class="section-blog pb-60 pb-lg-100 pb-xxl-120">
+				<div class="blog-wrapper bg-custom-light py-60 py-lg-100 py-xxl-120">
+					<div class="container">
+
+						<div class="row gy-4 justify-content-between align-items-end mb-30 mb-md-40">
+							<div class="col-md-9">
+								<div class="d-flex flex-column gap-10">
+									<h6 class="mb-0 text-primary fw-medium">Blog & Article</h6>
+									<h3 class="mb-0">Get The <span class="text-primary">Latest</span> Our News</h3>	
+								</div>							
+							</div>
+							<!-- col-9 -->
+							<div class="col-md-3 col-lg-2">
+								<div class="blogSwiper-buttons blogSwiper-buttons-style-2 d-flex gap-3 gap-lg-20 justify-content-md-end">
+									<div class="blogSwiper-button-prev">
+										<span class="blog-arrow-icon blog-arrow-style-2 arrow-reverse">											
+											<svg width="14" height="14"><use xlink:href="#arrow-icon-2"></use></svg> 
+										</span>
+									</div>
+									<div class="blogSwiper-button-next">
+										<span class="blog-arrow-icon blog-arrow-style-2">											
+											<svg width="14" height="14"><use xlink:href="#arrow-icon-2"></use></svg> 
+										</span>
+									</div>									
+								</div>
+								<!-- blogSwiper-buttons -->								
+							</div>
+							<!-- col-2 -->
+						</div>
+						<!-- row -->
+						<div class="swiper blogSwiper p-10 wow fadeInUp">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="card card-style-3 card-custom wow fadeInUp" data-wow-delay="150ms" data-wow-duration="1.3s">
+										<div class="card-image-wrapper border-10">
+											<img src="assets/images/blog-8.jpg" class="card-img-top" alt="blog-8">
+										</div>
+										<!-- card-image-wrapper -->
+										<div class="card-body">
+											<div class="d-flex flex-column gap-10">	
+												<p class="card-info mb-0 font-family-style-1">by <a href="#" class="text-decoration-none blog-custom-link">Admin</a> | 10 May 2025 | <a href="#" class="text-decoration-none blog-custom-link">Logistics</a></p>										
+												<h5 class="card-title fw-medium mb-0 mb-xl-2"><a href="news-single.html" class="text-decoration-none link-hover-animation-2">Optimizing Supply Chain Efficiency</a></h5>
+												<div>
+													<a href="news-single.html" class="btn btn-link text-decoration-none link-hover-animation-1 gap-10">Read More
+														<span class="btn-link-icon">											
+															<svg width="11" height="12"><use xlink:href="#arrow-icon-2"></use></svg> 
+														</span>
+													</a>
+												</div>
+											</div>
+										</div>
+										<!-- card-body -->
+									</div>
+									<!-- card -->
+								</div>
+								<!-- swiper-slide -->
+								<div class="swiper-slide">
+									<div class="card card-style-3 card-custom wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1.3s">
+										<div class="card-image-wrapper border-10">
+											<img src="assets/images/blog-9.jpg" class="card-img-top" alt="blog-9">
+										</div>
+										<!-- card-image-wrapper -->
+										<div class="card-body">
+											<div class="d-flex flex-column gap-10">	
+												<p class="card-info mb-0 font-family-style-1">by <a href="#" class="text-decoration-none blog-custom-link">Admin</a> | 24 Feb 2025 | <a href="#" class="text-decoration-none blog-custom-link">Transport</a></p>										
+												<h5 class="card-title fw-medium mb-0 mb-xl-2"><a href="news-single.html" class="text-decoration-none link-hover-animation-2">Navigating International Customs Regulations</a></h5>
+												<div>
+													<a href="news-single.html" class="btn btn-link text-decoration-none link-hover-animation-1 gap-10">Read More
+														<span class="btn-link-icon">											
+															<svg width="11" height="12"><use xlink:href="#arrow-icon-2"></use></svg> 
+														</span>
+													</a>
+												</div>
+											</div>
+										</div>
+										<!-- card-body -->
+									</div>
+									<!-- card -->
+								</div>
+								<!-- swiper-slide -->
+								<div class="swiper-slide">
+									<div class="card card-style-3 card-custom wow fadeInUp" data-wow-delay="450ms" data-wow-duration="1.3s">
+										<div class="card-image-wrapper border-10">
+											<img src="assets/images/about-image-2.jpg" class="card-img-top" alt="about-image-2">
+										</div>
+										<!-- card-image-wrapper -->
+										<div class="card-body">
+											<div class="d-flex flex-column gap-10">	
+												<p class="card-info mb-0 font-family-style-1">by <a href="#" class="text-decoration-none blog-custom-link">Admin</a> | 17 Jan 2025 | <a href="#" class="text-decoration-none blog-custom-link">Warehouse</a></p>										
+												<h5 class="card-title fw-medium mb-0 mb-xl-2"><a href="news-single.html" class="text-decoration-none link-hover-animation-2">Sustainable Logistics Building a Greener Supply Chain</a></h5>
+												<div>
+													<a href="news-single.html" class="btn btn-link text-decoration-none link-hover-animation-1 gap-10">Read More
+														<span class="btn-link-icon">											
+															<svg width="11" height="12"><use xlink:href="#arrow-icon-2"></use></svg> 
+														</span>
+													</a>
+												</div>
+											</div>
+										</div>
+										<!-- card-body -->
+									</div>
+									<!-- card -->
+								</div>
+								<!-- swiper-slide -->
+							</div>
+							<!-- swiper-wrapper -->	
+						</div>
+						<!-- swiper blogSwiper -->
+					</div>
+					<!-- container -->	
+				</div>
+				<!-- blog-wrapper -->
+			</section>
+			<!--Blog Section ======================-->
 			
 			<!--Faq Section ======================-->
 			<section class="section-faq faq-1">	
@@ -1658,7 +1678,7 @@
 								<div class="logo-footer mb-20 mb-xl-30">
 									<a class="navbar-brand py-0" href="index.html">
 										<span class="logo">
-											<img src="assets/images/logo-whi.png" class="img-fluid" alt="logo-white">							
+											<img src="assets/images/ANCHOR3.png" class="img-fluid" alt="logo-white">							
 										</span>						
 									</a>
 								</div>
@@ -1669,7 +1689,7 @@
 										<span class="contact-icon mail-icon">											
 											<svg width="20" height="20"><use xlink:href="#mail-icon"></use></svg> 
 										</span>											
-										<p class="mb-0"><a href="mailto:info@logistics.com" class="text-decoration-none link-hover-animation-2">anchorreliable32@gmail.com</a></p>
+										<p class="mb-0"><a href="mailto:anchorreliable32@gmail.com" class="text-decoration-none link-hover-animation-2">anchorreliable32@gmail.com</a></p>
 									</li>
 									<li class="d-flex gap-3 align-items-center">
 										<span class="contact-icon location-icon">											
@@ -1681,7 +1701,7 @@
 										<span class="contact-icon phone-icon">											
 											<svg width="20" height="20"><use xlink:href="#phone-icon"></use></svg> 
 										</span>
-										<p class="mb-0"><a href="tel:(+0123)234556789" class="text-decoration-none link-hover-animation-2">(+234)7060582482 <br> 0814 610 3219 </a></p>
+										<p class="mb-0"><a href="tel:(+234)7060582482" class="text-decoration-none link-hover-animation-2">(+234)7060582482 <br> 0814 610 3219 </a></p>
 									</li>											
 								</ul>
 
@@ -1752,26 +1772,26 @@
 												<span class="chevron-right-icon">											
 													<svg width="9" height="14"><use xlink:href="#chevron-right-icon"></use></svg> 
 												</span>
-												<a href="project.html" class="text-decoration-none link-hover-animation-1">Services</a>
+												<a href="service.html" class="text-decoration-none link-hover-animation-1">Services</a>
 											</li>
 											<li class="d-flex gap-10 align-items-center">
 												<span class="chevron-right-icon">											
 													<svg width="9" height="14"><use xlink:href="#chevron-right-icon"></use></svg> 
 												</span>
-												<a href="pricing.html" class="text-decoration-none link-hover-animation-1"> Importer’s Guide</a>
+												<a href="importers.html" class="text-decoration-none link-hover-animation-1"> Importer’s Guide</a>
 											</li>	
 											<li class="d-flex gap-10 align-items-center">
 												<span class="chevron-right-icon">											
 													<svg width="9" height="14"><use xlink:href="#chevron-right-icon"></use></svg> 
 												</span>
-												<a href="pricing.html" class="text-decoration-none link-hover-animation-1"> Resources / Blog</a>
+												<a href="news.html" class="text-decoration-none link-hover-animation-1"> Resources / Blog</a>
 											</li>	
-											<li class="d-flex gap-10 align-items-center">
+											<!--<li class="d-flex gap-10 align-items-center">
 												<span class="chevron-right-icon">											
 													<svg width="9" height="14"><use xlink:href="#chevron-right-icon"></use></svg> 
 												</span>
 												<a href="pricing.html" class="text-decoration-none link-hover-animation-1"> FAQ</a>
-											</li>								
+											</li>-->								
 											<li class="d-flex gap-10 align-items-center">
 												<span class="chevron-right-icon">											
 													<svg width="9" height="14"><use xlink:href="#chevron-right-icon"></use></svg> 
@@ -2101,10 +2121,25 @@
 			<script src="assets/js/jquery.progressScroll.min.js"></script>	
 			<script src="assets/js/odometer.js"></script>	
 			
-			<script src="assets/js/script.js"></script>	
+			<script src="assets/js/script.js"></script>
+
+			
+        
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+              
+
+
 
 	</body>
 
 
 <!-- Mirrored from themeperch.net/html/logistip/home-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Dec 2025 12:03:26 GMT -->
 </html>
+
+
+
+
+
+
